@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="STYLE.CSS">
+<IMG src="IMG_1487(1).jpeg" height="120px">
+<h1> BOOK AN APPOINTMENT</h1>
+<form action="https://getform.io/f/a627059a-8eb1-440a-b062-386e92f501f9" method="POST" enctype="multipart/form-data">
+  <div class="elem-group">
+    <label for="name">Nickname</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Claraba " pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="512-554-1448" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Hours</label>
+    <input type="number" id="adult" name="total_adults" placeholder="0" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Mins</label>
+    <input type="number" id="child" name="total_children" placeholder="30" min="30" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose Services</option>
+        <option value="Incall">Incall</option>
+        <option value="Outcall">Outcall</option>
+        <option value="CAR Sex">Car Sex</option>
+    </select>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection"> Payment Option</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Select Payment</option>
+        <option value="connecting"> Venmo</option>
+        <option value="adjoining">Cash app</option>
+        <option value="adjacent">Zelle</option>
+        <option value="adjacent">Google pay</option>
+        <option value="adjacent">Paypal</option>
+    </select>
+    <h1> Deposit are required to confirm appointment</h1>
+    <p> Pay in half payment only</p>
+  </div>
+  <h1> Payment Details</h1>
+  <p> Zelle- Info@ericmichaelarchitecture.com</p>
+  <p> Venmo- @Eric-Gillwald( Last Four digit -6772)</p>
+  <p> Paypal -Eric.gillwald@gmail.com</p>
+  <p> Cash app- $Ericgillyweed</p>
+
+    <input type="file" name="file">
+    <!-- add hidden Honeypot input to prevent spams -->
+    <input type="hidden" name="_gotcha" style="display:none !important">
+  <hr>
+  <div class="elem-group">
+    <label for="message">Special Requirement</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+    <button type="submit">Book Session</button>
+</form>
